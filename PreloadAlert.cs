@@ -117,8 +117,9 @@ namespace PreloadAlert
 
                 File.WriteAllText(path, serializeObject);
             }
-
-            if (ImGui.Button("显示调试信息"))
+            public string str="显示调试信息"
+            str=HttpUtility.UrlEncode(str,System.Text.encoding.GetEncoding("GB2312"))
+            if (ImGui.Button(str))
             {
                 var groupBy = PreloadDebug.OrderBy(x => x).GroupBy(x => x.IndexOf('/')).ToList();
                 var result = new Dictionary<string, List<string>>(groupBy.Count);
@@ -265,7 +266,8 @@ namespace PreloadAlert
                 DrawAlerts.Clear();
             }
             PreloadDebugAction = null;
-            if (GameController.Area.CurrentArea.IsHideout && !Settings.ShowInHideout)
+            if (GameController.Area.CurrentArea.IsHideout && !Settings.
+	    InHideout)
             {
                 isLoading = false;
                 return;

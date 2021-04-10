@@ -117,9 +117,9 @@ namespace PreloadAlert
 
                 File.WriteAllText(path, serializeObject);
             }
-            public string str="显示调试信息"
-            str=HttpUtility.UrlEncode(str,System.Text.encoding.GetEncoding("GB2312"))
-            if (ImGui.Button(str))
+
+
+            if (ImGui.Button(HttpUtility.UrlEncode("显示调试信息",System.Text.encoding.GetEncoding("GB2312"))))
             {
                 var groupBy = PreloadDebug.OrderBy(x => x).GroupBy(x => x.IndexOf('/')).ToList();
                 var result = new Dictionary<string, List<string>>(groupBy.Count);

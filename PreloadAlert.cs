@@ -417,19 +417,19 @@ namespace PreloadAlert
             {
                 {
                     "Metadata/Monsters/Daemon/EssenceDaemonMeteorFirestorm",
-                    new PreloadConfigLine {Text = "Essence of Anguish", FastColor = () => Settings.EssenceOfAnguish}
+                    new PreloadConfigLine {Text = "我草", FastColor = () => Settings.EssenceOfAnguish}
                 },
                 {
                     "Metadata/Monsters/Daemon/EssenceDaemonFirePulse",
-                    new PreloadConfigLine {Text = "Essence of Anger", FastColor = () => Settings.EssenceOfAnger}
+                    new PreloadConfigLine {Text = "E我草", FastColor = () => Settings.EssenceOfAnger}
                 },
                 {
                     "Metadata/Monsters/Daemon/EssenceDaemonColdPulse",
-                    new PreloadConfigLine {Text = "Essence of Hatred", FastColor = () => Settings.EssenceOfHatred}
+                    new PreloadConfigLine {Text = "E我草2", FastColor = () => Settings.EssenceOfHatred}
                 },
                 {
                     "Metadata/Monsters/Daemon/EssenceDaemonLightningPulse",
-                    new PreloadConfigLine {Text = "Essence of Wrath", FastColor = () => Settings.EssenceOfWrath}
+                    new PreloadConfigLine {Text = "我草3h", FastColor = () => Settings.EssenceOfWrath}
                 },
                 {
                     "Metadata/Monsters/Daemon/EssenceDaemonChaosDegenPulse",

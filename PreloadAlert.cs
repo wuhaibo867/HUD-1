@@ -118,7 +118,7 @@ namespace PreloadAlert
                 File.WriteAllText(path, serializeObject);
             }
 
-            if (ImGui.Button("Show all preloads"))
+            if (ImGui.Button("显示调试信息"))
             {
                 var groupBy = PreloadDebug.OrderBy(x => x).GroupBy(x => x.IndexOf('/')).ToList();
                 var result = new Dictionary<string, List<string>>(groupBy.Count);
